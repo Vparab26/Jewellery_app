@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "384879530177",
+    "project_id": "kisansuvidha-2696",
+    "storage_bucket": "kisansuvidha-2696.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:384879530177:android:4a2e176a6c98239d558440",
+        "android_client_info": {
+          "package_name": "com.example.kisan_suvidha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "384879530177-5muc58q8rp4np19kbm5s5jid7s80let6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPW-fZzHOH6NBHWRORt7qeIa8FJLwbrHE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "384879530177-5muc58q8rp4np19kbm5s5jid7s80let6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

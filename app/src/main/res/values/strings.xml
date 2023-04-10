@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Kisan_Suvidha</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="profile">profile</string>
+    <string name="category">category</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Offers">Offers</string>
+    <string name="new_products">New Products</string>
+    <string name="New_Products">New_Products</string>
+    <string name="my_orders">My Orders</string>
+    <string name="my_cart">My_Cart</string>
+    <string name="description">Grain is the harvested seed of grasses such as wheat, oats, rice, and corn. Other important grains include sorghum, millet, rye, and barley. Around the globe, grains, also called cereals, are the most important staple food. Humans get an average of 48 percent of their calories, or food energy, from grains.</string>
+    <string name="Logout">Logout</string>
+    <string name="Schemes">Schemes</string>
+</resources>
