@@ -18,6 +18,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.example.kisan_suvidha.activities.PaymentActivity;
 import com.example.kisan_suvidha.activities.PlacedOrderActivity;
 import com.example.kisan_suvidha.adapters.MyCartAdapter;
 import com.example.kisan_suvidha.models.MyCartModel;
@@ -89,7 +90,7 @@ public class MyCartFragment extends Fragment {
         buyNow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getContext(), PlacedOrderActivity.class);
+                Intent intent = new Intent(getContext(), PaymentActivity.class);
                 intent.putExtra("itemList", (Serializable) cartModelList);
                 startActivity(intent);
 

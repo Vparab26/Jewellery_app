@@ -47,14 +47,12 @@ public class MainActivity extends AppCompatActivity {
         auth=FirebaseAuth.getInstance();
         database=FirebaseDatabase.getInstance();
 
-
-
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_category, R.id.nav_profile, R.id.nav_schemes, R.id.nav_new_products
+                R.id.nav_home, R.id.nav_category, R.id.nav_profile,R.id.nav_new_products
         , R.id.nav_my_orders, R.id.nav_my_carts)
                 .setOpenableLayout(drawer)
                 .build();

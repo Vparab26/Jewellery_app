@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/detailed_img"
-        android:layout_width="413dp"
-        android:layout_height="250dp"
+        android:layout_width="374dp"
+        android:layout_height="434dp"
         android:scaleType="centerCrop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,8 +74,8 @@
 
     <RelativeLayout
         android:id="@+id/relativelayout1"
-        android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_width="393dp"
+        android:layout_height="57dp"
         android:background="#C5FDAD"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -16,10 +16,7 @@
             android:id="@+id/nav_category"
             android:icon="@drawable/menu_category"
             android:title="@string/category" />
-        <item
-            android:id="@+id/nav_schemes"
-            android:icon="@drawable/menu_offers"
-            android:title="Schemes" />
+
         <item
             android:id="@+id/nav_new_products"
             android:icon="@drawable/menu_newproducts"

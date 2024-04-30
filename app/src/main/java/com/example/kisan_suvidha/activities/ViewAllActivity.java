@@ -49,8 +49,8 @@ public class ViewAllActivity extends AppCompatActivity {
         viewAllAdapter = new ViewAllAdapter(this,viewAllModelList);
         recyclerView.setAdapter(viewAllAdapter);
 
-        if (type != null && type.equalsIgnoreCase("seed")) {
-            firestore.collection("AllProducts").whereEqualTo("type", "seed").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        if (type != null && type.equalsIgnoreCase("Mangalsutra")) {
+            firestore.collection("AllProducts").whereEqualTo("type", "Mangalsutra").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
@@ -65,8 +65,8 @@ public class ViewAllActivity extends AppCompatActivity {
 
         }
 
-            if (type != null && type.equalsIgnoreCase("pesticides")){
-                firestore.collection("AllProducts").whereEqualTo("type","pesticides").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+            if (type != null && type.equalsIgnoreCase("Earing")){
+                firestore.collection("AllProducts").whereEqualTo("type","Earing").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                     @Override
                     public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
@@ -79,8 +79,8 @@ public class ViewAllActivity extends AppCompatActivity {
                     }
                 });
         }
-        if (type != null && type.equalsIgnoreCase("fertilizer")){
-            firestore.collection("AllProducts").whereEqualTo("type","fertilizer").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        if (type != null && type.equalsIgnoreCase("Bangles")){
+            firestore.collection("AllProducts").whereEqualTo("type","Bangles").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
@@ -93,8 +93,8 @@ public class ViewAllActivity extends AppCompatActivity {
                 }
             });
         }
-        if (type != null && type.equalsIgnoreCase("animal husbandry")){
-            firestore.collection("AllProducts").whereEqualTo("type","animal husbandry").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        if (type != null && type.equalsIgnoreCase("Ring")){
+            firestore.collection("AllProducts").whereEqualTo("type","Ring").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
@@ -107,8 +107,8 @@ public class ViewAllActivity extends AppCompatActivity {
                 }
             });
         }
-        if (type != null && type.equalsIgnoreCase("tool")){
-            firestore.collection("AllProducts").whereEqualTo("type","tool").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        if (type != null && type.equalsIgnoreCase("Nose Ring")){
+            firestore.collection("AllProducts").whereEqualTo("type","Nose Ring").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
 

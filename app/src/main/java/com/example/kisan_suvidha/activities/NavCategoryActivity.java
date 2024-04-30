@@ -42,16 +42,16 @@ public class NavCategoryActivity extends AppCompatActivity {
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         list = new ArrayList<>();
-        adapter = new NavCategoryDetailedAdapter(this,list);
+        adapter = new NavCategoryDetailedAdapter(this, list);
         recyclerView.setAdapter(adapter);
 
 
-        if (type != null && type.equalsIgnoreCase("pesticides")){
-            db.collection("NavCategoryDetailed").whereEqualTo("type","pesticides").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        if (type != null && type.equalsIgnoreCase("Ring")) {
+            db.collection("NavCategoryDetailed").whereEqualTo("type", "Ring").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
-                    for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()){
+                    for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()) {
                         NavCategoryDetailedModel viewAllModel = documentSnapshot.toObject(NavCategoryDetailedModel.class);
                         list.add(viewAllModel);
                         adapter.notifyDataSetChanged();
@@ -60,27 +60,12 @@ public class NavCategoryActivity extends AppCompatActivity {
                 }
             });
         }
-        if (type != null && type.equalsIgnoreCase("fertilizer")){
-            db.collection("NavCategoryDetailed").whereEqualTo("type","fertilizer").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        if (type != null && type.equalsIgnoreCase("Mangalsutra")) {
+            db.collection("NavCategoryDetailed").whereEqualTo("type", "Mangalsutra").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
-                    for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()){
-                        NavCategoryDetailedModel viewAllModel = documentSnapshot.toObject(NavCategoryDetailedModel.class);
-                        list.add(viewAllModel);
-                        adapter.notifyDataSetChanged();
-                    }
-
-                }
-            });
-        }
-
-        if (type != null && type.equalsIgnoreCase("tool")){
-            db.collection("NavCategoryDetailed").whereEqualTo("type","tool").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
-                @Override
-                public void onComplete(@NonNull Task<QuerySnapshot> task) {
-
-                    for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()){
+                    for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()) {
                         NavCategoryDetailedModel viewAllModel = documentSnapshot.toObject(NavCategoryDetailedModel.class);
                         list.add(viewAllModel);
                         adapter.notifyDataSetChanged();
@@ -90,12 +75,12 @@ public class NavCategoryActivity extends AppCompatActivity {
             });
         }
 
-        if (type != null && type.equalsIgnoreCase("seed")){
-            db.collection("NavCategoryDetailed").whereEqualTo("type","seed").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+        if (type != null && type.equalsIgnoreCase("Bangles")) {
+            db.collection("NavCategoryDetailed").whereEqualTo("type", "Bangles").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
                 @Override
                 public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
-                    for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()){
+                    for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()) {
                         NavCategoryDetailedModel viewAllModel = documentSnapshot.toObject(NavCategoryDetailedModel.class);
                         list.add(viewAllModel);
                         adapter.notifyDataSetChanged();
@@ -105,6 +90,20 @@ public class NavCategoryActivity extends AppCompatActivity {
             });
         }
 
+        if (type != null && type.equalsIgnoreCase("Earing")) {
+            db.collection("NavCategoryDetailed").whereEqualTo("type", "Earing").get().addOnCompleteListener(new OnCompleteListener<QuerySnapshot>() {
+                @Override
+                public void onComplete(@NonNull Task<QuerySnapshot> task) {
 
+                    for (DocumentSnapshot documentSnapshot : task.getResult().getDocuments()) {
+                        NavCategoryDetailedModel viewAllModel = documentSnapshot.toObject(NavCategoryDetailedModel.class);
+                        list.add(viewAllModel);
+                        adapter.notifyDataSetChanged();
+                    }
+
+                }
+            });
+        }
     }
 }
+

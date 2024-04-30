@@ -4,50 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/welcome_screen"
     tools:context=".activities.Welcome">
-
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="122dp"
-        android:layout_height="36dp"
-        android:text="KISAN"
-        android:textAlignment="center"
-        android:textColor="@android:color/holo_orange_light"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.169"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.56" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="176dp"
-        android:layout_height="38dp"
-        android:text="SUVIDHA"
-        android:textAlignment="center"
-        android:textColor="?android:attr/statusBarColor"
-        android:textSize="34sp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.77"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.583" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="348dp"
-        android:layout_height="355dp"
-        android:backgroundTintMode="screen"
-        android:src="@mipmap/home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.23" />
 
 
     <Button
@@ -55,6 +13,7 @@
         android:layout_width="143dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
         android:text="LOGIN"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -70,6 +29,7 @@
         android:id="@+id/register"
         android:layout_width="212dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="228dp"
         android:text="REGISTRATION"
         android:textAlignment="center"
         android:textColor="@color/white"
